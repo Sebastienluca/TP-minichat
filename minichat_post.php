@@ -1,4 +1,5 @@
 <?php
+setcookie('pseudo', $_POST['pseudo'], time() + 365*24*3600, null, null, false, true); // On écrit un cookie
 
 // connexion à la base de donnée
 try {

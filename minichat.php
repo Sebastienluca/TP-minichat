@@ -1,5 +1,6 @@
 <?php
-setcookie('pseudo', 'M@teo21', time() + 365*24*3600, null, null, false, true); // On écrit un cookie
+
+
 // connexion à la base de donnée
 try {
 
@@ -35,7 +36,15 @@ try {
 <fieldset>
 	<div class="form-group">
 	 	<label for="pseudo">Votre pseudo</label>
-	      <input class="form-control" type="text" name="pseudo" value="<?php echo $_COOKIE['pseudo']; ?>" />
+	      <label for="pseudo">Pseudo :</label>
+<input type="text" name="pseudo" id="pseudo" value="<?php
+ 
+  if(isset($_COOKIE['pseudo']))
+  {
+    echo htmlspecialchars($_COOKIE['pseudo']);
+  }
+   
+  ?>"><br>
 	</div>
 </fieldset>
 <fieldset>
@@ -45,6 +54,9 @@ try {
 	</div>
 </fieldset>
 <button type="submit" name="submit value="Uploader" class="input-btn pull-left">Envoyer votre message</button>
+ </p>
+    <!-- Recharger la page en appuyant sur le bouton -->
+    <p> <a href="javascript:window.location.reload()">Recharger la page</a> </p>
 </form>
 </div>
 <div class="news">
