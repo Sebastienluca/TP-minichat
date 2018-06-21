@@ -1,0 +1,184 @@
+/* ---------------------------------- facon SMACSS ---------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+} 
+
+html, body {
+	height: 100%;
+	margin: 0; padding: 0;
+}
+body {
+	display : table;
+	width: 100%;
+	font-size: 0.9em;
+	font-family: 'PT Sans', sans-serif;
+	background-color:#fff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+header h1{
+	text-align: center;
+	
+}
+
+a, a:hover, a:visited {
+	font-family: 'Roboto', "Arial Black", Arial, Verdana, sans-serif;
+	font-size: 1em;
+	color: #000;
+	text-decoration:none;
+}
+
+img{
+	max-width: 100%;
+}
+
+ul li{
+	list-style-type: none;
+	text-decoration: none;
+}
+
+h2,h3 {
+	font-family: "Roboto", Arial, Verdana, sans-serif;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+h1 span {
+	color:#5CADD3;
+}
+
+h2 { 
+	text-align: center;
+	font-size: 40px;
+}
+
+h3 { 
+	text-align: left;
+	font-size: 20px;
+}
+
+section{
+	padding: 10vh 0 0 0;
+}
+
+footer{
+	display : table-row;
+	min-height:100px;
+	background-color:#5CADD3;
+}
+
+/* formulaire */
+
+#formulaire{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	font-family: Helvetica, sans-serif;
+	width: 450px;
+	margin: 0 auto;
+}
+
+#minichat{
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	border: 3px solid #5CADD3;
+	border-radius: 5px 5px 5px 5px;
+	position: relative;
+	padding:5px 0;
+}
+
+#content{
+	width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+/* 	border: 1px solid #CDCDCD; */
+	border-radius: 5px 5px 5px 5px;
+	position: relative;
+}
+
+#footer{
+	/* width: 350px; 
+	margin-right: 10px;*/
+	margin-top: 50px;
+/* 	border: 1px solid #CDCDCD;
+border-radius: 5px 5px 5px 5px;
+position: relative;
+float: right; */
+}
+
+span.pseudo{
+	font-size: 13px;
+	color:#5CADD3;
+}
+
+span.message{
+	font-size: 12px;
+
+}
+
+fieldset{
+	padding: 0 10px;
+	border: none;
+}
+
+label
+{
+	width: 150px;
+	color: #931414;
+}
+
+input,button, select{
+	height: 30px;
+}
+
+input, textarea, select {
+	width: 95%;
+	font-family: 'PT Sans', sans-serif;
+	margin: 3px 0;
+	padding: 0 10px;
+	font-size: 0.9em;
+	color: #000;
+	border: 1px solid #CDCDCD;
+	border-radius: 5px 5px 5px 5px;
+}
+
+input.btn{
+	font:bold 13px Arial;
+	background:#5CADD3;
+	color:#fff;
+	width: 120px;
+	border-bottom: 3px solid #4494BB;
+}
+
+button {
+
+	font:bold 13px Arial;
+	background:#5CADD3;
+	color:#fff;
+	width: 220px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 0 10px;
+	font-size: 0.9em;
+	color: #000;
+	border: 1px solid #CDCDCD;
+	border-radius: 5px 5px 5px ;
+
+
+
+#select{
+	position: relative;
+}
